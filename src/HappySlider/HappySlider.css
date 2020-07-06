@@ -3,7 +3,7 @@ input[type=range] {
   appearance: none;
   width: 100%; /* Full-width */
   height: 10px; /* Specified height */
-  background: blue; /* blue background */
+  background: #0000FF; /* #0000FF background */
   border-radius: 5px;
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -20,9 +20,9 @@ input[type=range]::-webkit-slider-thumb {
   appearance: none;
   width: 30px; /* width of thumb */
   height: 30px; /* height of thumb */
-  border: 3px solid blue;
+  border: 3px solid #0000FF;
   border-radius: 15px; /* Create circle for thumb image */
-  background-color: blue; /* Back-up coloring if image too small */
+  background-color: #0000FF; /* Back-up coloring if image too small */
   background-size: 24px; /* Size of image inside thumb */
   cursor: pointer;
 }
