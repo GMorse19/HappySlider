@@ -2,6 +2,13 @@
 
 A range slider that uses smiley faces to denote changes in slider values.
 
-## Install
+### Install react-rangeslider
+```
+npm install react-rangeslider --save
+```
 
-- npm install node-sass
+### Import react-rangeslider
+
+```
+import 'react-rangeslider/lib/index.css'
+```
