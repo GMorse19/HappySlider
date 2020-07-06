@@ -18,8 +18,10 @@ class HappySlider extends Component {
       value: event.target.value
     })
 
+    // Set 'x' to the slider value
     const x = event.target.value
 
+    // Conditionals that change the className based on the value of slider
     if (x === '1') {
       this.setState({
         className: 'smiley-1'
@@ -44,9 +46,8 @@ class HappySlider extends Component {
   }
 
   render () {
-    const { value } = this.state
+    const { value, className } = this.state
     return (
-      <div>
       <div className="slidecontainer">
         <input
           type="range"
@@ -54,10 +55,9 @@ class HappySlider extends Component {
           min={1}
           max={5}
           value={value}
-          className={this.state.className}
+          className={className}
           id="myRange"
         />
-      </div>
       </div>
     )
   }
