@@ -10,3 +10,5 @@ A range slider that uses smiley faces to denote changes in slider values.
 ```
 npm install react-rangeslider --save
 ```
+
+## [Example](https://gmorse19.github.io/HappySlider/)
