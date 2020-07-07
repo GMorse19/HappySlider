@@ -18,6 +18,9 @@ class HappySlider extends Component {
 
   render () {
     const { value } = this.state
+
+    const rounded = Math.round(value)
+
     return (
       <div className="slidecontainer">
         <input
@@ -26,9 +29,9 @@ class HappySlider extends Component {
           min={1}
           max={5}
           value={value}
-          className={`smiley-${value}`}
+          className={`smiley-${rounded}`}
           id="myRange"
-          step={1}
+          step={0.01}
         />
       </div>
     )
