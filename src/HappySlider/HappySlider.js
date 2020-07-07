@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
 
-import 'react-rangeslider/lib/index.css'
-
 import './HappySlider.css'
 
 class HappySlider extends Component {
   constructor (props, context) {
     super(props, context)
     this.state = {
-      value: 3,
-      className: 'smiley-3'
+      value: 3
     }
   }
 
@@ -17,36 +14,10 @@ class HappySlider extends Component {
     this.setState({
       value: event.target.value
     })
-
-    // Set 'x' to the slider value
-    const x = event.target.value
-
-    // Conditionals that change the className based on the value of slider
-    if (x === '1') {
-      this.setState({
-        className: 'smiley-1'
-      })
-    } else if (x === '2') {
-      this.setState({
-        className: 'smiley-2'
-      })
-    } else if (x === '3') {
-      this.setState({
-        className: 'smiley-3'
-      })
-    } else if (x === '4') {
-      this.setState({
-        className: 'smiley-4'
-      })
-    } else if (x === '5') {
-      this.setState({
-        className: 'smiley-5'
-      })
-    }
   }
 
   render () {
-    const { value, className } = this.state
+    const { value } = this.state
     return (
       <div className="slidecontainer">
         <input
@@ -55,13 +26,13 @@ class HappySlider extends Component {
           min={1}
           max={5}
           value={value}
-          className={className}
+          className={`smiley-${value}`}
           id="myRange"
+          step={1}
         />
       </div>
     )
   }
-
 }
 
 export default HappySlider
