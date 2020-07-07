@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import './HappySlider.css'
 
 class HappySlider extends Component {
-  constructor (props, context) {
-    super(props, context)
+  constructor (props) {
+    super(props)
     this.state = {
       value: 3
     }
