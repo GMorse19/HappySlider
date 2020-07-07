@@ -1,27 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2f2074f3f6072be841a6975c66d0af0d",
+    "revision": "fa4d87e2817872827ac450034d907e02",
     "url": "/HappySlider/index.html"
   },
   {
-    "revision": "3f57524db949cc00e252",
-    "url": "/HappySlider/static/css/2.14fbd4c8.chunk.css"
-  },
-  {
-    "revision": "9ce02a9a9d840b5693c8",
+    "revision": "b313397fb1c37323e9fe",
     "url": "/HappySlider/static/css/main.4305242f.chunk.css"
   },
   {
-    "revision": "3f57524db949cc00e252",
-    "url": "/HappySlider/static/js/2.84a6ca19.chunk.js"
+    "revision": "0caa8f104625cadb9931",
+    "url": "/HappySlider/static/js/2.38c541b4.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/HappySlider/static/js/2.84a6ca19.chunk.js.LICENSE.txt"
+    "url": "/HappySlider/static/js/2.38c541b4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ce02a9a9d840b5693c8",
-    "url": "/HappySlider/static/js/main.1b184eb3.chunk.js"
+    "revision": "b313397fb1c37323e9fe",
+    "url": "/HappySlider/static/js/main.340ea71f.chunk.js"
   },
   {
     "revision": "90fb5cd2ca7fbd7bb1df",
