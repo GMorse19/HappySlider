@@ -10,16 +10,21 @@ class HappySlider extends Component {
     }
   }
 
+  imageUrl = './Smiley/smiley3.png'
+
   handleChange = event => {
     this.setState({
       value: event.target.value
     })
+    // const number = Math.round(event.target.value)
+    // console.log(number)
+    document.body.style.setProperty('--background-image', "url(" + this.imageUrl + ")")
   }
 
   render () {
     const { value } = this.state
 
-    const rounded = Math.round(value)
+    // const rounded = Math.round(value)
 
     return (
       <div className="slidecontainer">
@@ -29,7 +34,7 @@ class HappySlider extends Component {
           min={1}
           max={5}
           value={value}
-          className={`smiley-${rounded}`}
+          className='smiley'
           id="myRange"
           step={0.01}
         />
