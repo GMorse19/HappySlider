@@ -1,5 +1,5 @@
-body {
-  --background-image: url('./Smileys/smiley1.png');
+:root {
+  --background-image: url('./Smileys/smiley3.png');
   --background-color: red;
 }
 
@@ -35,7 +35,7 @@ input[type=range]::-webkit-slider-thumb {
 
 /* Different background-images for slider thumb */
 /* input[type=range].smiley-1::-webkit-slider-thumb {
-  background-image: var(--main-bg-image);
+  background-image: var(--background-image);
 }
 
 input[type=range].smiley-2::-webkit-slider-thumb {
