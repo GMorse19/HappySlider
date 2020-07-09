@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 
 import './HappySlider.css'
 
+import smiley1 from './Smileys/smiley1.png'
+import smiley2 from './Smileys/smiley2.png'
+import smiley3 from './Smileys/smiley3.png'
+import smiley4 from './Smileys/smiley4.png'
+import smiley5 from './Smileys/smiley5.png'
+
 class HappySlider extends Component {
   constructor (props) {
     super(props)
@@ -10,31 +16,15 @@ class HappySlider extends Component {
     }
   }
 
-  imageUrl = ''
-
   handleChange = event => {
     this.setState({
       value: event.target.value
     })
     const number = Math.round(event.target.value)
 
-    if(number === 1) {
-      this.imageUrl = 'url(\/static\/media\/smiley1\.cb6d28ed\.png)'
-    } else if (number === 2) {
-      this.imageUrl = 'url(\/static\/media\/smiley2\.b4c1c338\.png)'
-    } else if (number === 3) {
-      this.imageUrl = 'url(\/static\/media\/smiley3\.f3969dab\.png)'
-    } else if (number === 4) {
-      this.imageUrl = 'url(\/static\/media\/smiley4\.e2025ea6\.png)'
-    } else if (number === 5) {
-      this.imageUrl = 'url(\/static\/media\/smiley5\.37ebb46b\.png)'
-    }
+    const smileys = ['', smiley1, smiley2, smiley3, smiley4, smiley5]
 
-    // const el = getComputedStyle(document.documentElement)
-    // .getPropertyValue('--background-image')
-    // console.log(el)
-
-    document.documentElement.style.setProperty('--background-image', this.imageUrl)
+    document.documentElement.style.setProperty('--background-image', `url(${smileys[number]})`)
     document.documentElement.style.setProperty('--background-color', 'purple')
   }
 
