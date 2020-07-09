@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/HappySlider/precache-manifest.cab733253687d7e9db06f20d7b13a21c.js"
+  "/HappySlider/precache-manifest.bdb2664410df34bd26e13e07de4647ca.js"
 );
 
 self.addEventListener('message', (event) => {
