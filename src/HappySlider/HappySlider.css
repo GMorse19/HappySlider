@@ -1,3 +1,7 @@
+:root {
+  --background-image: url('./Smileys/smiley3.png'); /*Variable setup for switching images on slider thumb*/
+}
+
 input[type=range] {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
@@ -23,29 +27,9 @@ input[type=range]::-webkit-slider-thumb {
   border: 3px solid #0000FF;
   border-radius: 15px; /* Create circle for thumb image */
   background-color: #0000FF; /* Back-up coloring if image too small */
+  background-image: var(--background-image);
   background-size: 24px; /* Size of image inside thumb */
   cursor: pointer;
-}
-
-/* Different background-images for slider thumb */
-input[type=range].smiley-1::-webkit-slider-thumb {
-  background-image: url('./Smileys/smiley1.png');
-}
-
-input[type=range].smiley-2::-webkit-slider-thumb {
-  background-image: url('./Smileys/smiley2.png');
-}
-
-input[type=range].smiley-3::-webkit-slider-thumb {
-  background-image: url('./Smileys/smiley3.png');
-}
-
-input[type=range].smiley-4::-webkit-slider-thumb {
-  background-image: url('./Smileys/smiley4.png');
-}
-
-input[type=range].smiley-5::-webkit-slider-thumb {
-  background-image: url('./Smileys/smiley5.png');
 }
 
 .slidecontainer {
