@@ -1,53 +1,34 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import './HappySlider.css'
+import { smileys } from './smileyArray'
 
-import smiley1 from './Smileys/smiley1.png'
-import smiley2 from './Smileys/smiley2.png'
-import smiley3 from './Smileys/smiley3.png'
-import smiley4 from './Smileys/smiley4.png'
-import smiley5 from './Smileys/smiley5.png'
+export const HappySlider = ({ id, value, min, max, name, onChange, className, step }) => {
 
-class HappySlider extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      value: 3
-    }
-  }
-
-  handleChange = event => {
-    this.setState({
-      value: event.target.value
-    })
-    const number = Math.round(event.target.value)
-
-    const smileys = ['', smiley1, smiley2, smiley3, smiley4, smiley5]
-
-    document.documentElement.style.setProperty('--background-image', `url(${smileys[number]})`)
-    document.documentElement.style.setProperty('--background-color', 'purple')
-  }
-
-  render () {
-    const { value } = this.state
-
+    // Round the value of the slider
+    // Unecessary if 'step' is set to an integer
     const rounded = Math.round(value)
+
+    // Set the CSS variable from the 'id' of the input
+    // and the rounded value of the slider
+    document.documentElement.style.setProperty(`--background-image-${id}`, `url(${smileys[rounded]})`)
 
     return (
       <div className="slidecontainer">
         <input
           type="range"
-          onChange={this.handleChange}
-          min={1}
-          max={5}
+          id={id}
+          onChange={onChange}
+          min={min}
+          max={max}
+          name={name}
           value={value}
-          className={`smiley-${rounded}`}
-          id="myRange"
-          step={0.01}
+          className={className}
+          step={step}
         />
       </div>
     )
   }
-}
+
 
 export default HappySlider
