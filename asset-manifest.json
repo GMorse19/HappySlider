@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/HappySlider/static/css/main.57243f1d.chunk.css",
-    "main.js": "/HappySlider/static/js/main.3616cc3c.chunk.js",
-    "main.js.map": "/HappySlider/static/js/main.3616cc3c.chunk.js.map",
+    "main.css": "/HappySlider/static/css/main.e40e8baa.chunk.css",
+    "main.js": "/HappySlider/static/js/main.260e9401.chunk.js",
+    "main.js.map": "/HappySlider/static/js/main.260e9401.chunk.js.map",
     "runtime-main.js": "/HappySlider/static/js/runtime-main.3a3804f5.js",
     "runtime-main.js.map": "/HappySlider/static/js/runtime-main.3a3804f5.js.map",
-    "static/js/2.754acc0a.chunk.js": "/HappySlider/static/js/2.754acc0a.chunk.js",
-    "static/js/2.754acc0a.chunk.js.map": "/HappySlider/static/js/2.754acc0a.chunk.js.map",
+    "static/js/2.b3d170c6.chunk.js": "/HappySlider/static/js/2.b3d170c6.chunk.js",
+    "static/js/2.b3d170c6.chunk.js.map": "/HappySlider/static/js/2.b3d170c6.chunk.js.map",
     "index.html": "/HappySlider/index.html",
-    "precache-manifest.bdb2664410df34bd26e13e07de4647ca.js": "/HappySlider/precache-manifest.bdb2664410df34bd26e13e07de4647ca.js",
+    "precache-manifest.82b932afc149a5bf9b1dc8869cad2714.js": "/HappySlider/precache-manifest.82b932afc149a5bf9b1dc8869cad2714.js",
     "service-worker.js": "/HappySlider/service-worker.js",
-    "static/css/main.57243f1d.chunk.css.map": "/HappySlider/static/css/main.57243f1d.chunk.css.map",
-    "static/js/2.754acc0a.chunk.js.LICENSE.txt": "/HappySlider/static/js/2.754acc0a.chunk.js.LICENSE.txt",
-    "static/media/smiley1.png": "/HappySlider/static/media/smiley1.cb6d28ed.png",
-    "static/media/smiley2.png": "/HappySlider/static/media/smiley2.b4c1c338.png",
-    "static/media/HappySlider.css": "/HappySlider/static/media/smiley3.f3969dab.png",
-    "static/media/smiley4.png": "/HappySlider/static/media/smiley4.e2025ea6.png",
-    "static/media/smiley5.png": "/HappySlider/static/media/smiley5.37ebb46b.png"
+    "static/css/main.e40e8baa.chunk.css.map": "/HappySlider/static/css/main.e40e8baa.chunk.css.map",
+    "static/js/2.b3d170c6.chunk.js.LICENSE.txt": "/HappySlider/static/js/2.b3d170c6.chunk.js.LICENSE.txt",
+    "static/media/smiley1.svg": "/HappySlider/static/media/smiley1.dd3f1771.svg",
+    "static/media/smiley2.svg": "/HappySlider/static/media/smiley2.fc40ef20.svg",
+    "static/media/HappySlider.css": "/HappySlider/static/media/smiley3.e12a5923.svg",
+    "static/media/smiley4.svg": "/HappySlider/static/media/smiley4.f5ff57bd.svg",
+    "static/media/smiley5.svg": "/HappySlider/static/media/smiley5.27fddc3e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3a3804f5.js",
-    "static/js/2.754acc0a.chunk.js",
-    "static/css/main.57243f1d.chunk.css",
-    "static/js/main.3616cc3c.chunk.js"
+    "static/js/2.b3d170c6.chunk.js",
+    "static/css/main.e40e8baa.chunk.css",
+    "static/js/main.260e9401.chunk.js"
   ]
 }
