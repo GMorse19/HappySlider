@@ -1,5 +1,7 @@
 :root {
-  --background-image: url('./Smileys/smiley3.png'); /*Variable setup for switching images on slider thumb*/
+  /*Variables setup for switching images on slider thumb*/
+  --background-image-sliderOne: url('./Smileys/smiley3.svg');
+  --background-image-sliderTwo: url('./Smileys/smiley3.svg');
 }
 
 input[type=range] {
@@ -27,9 +29,17 @@ input[type=range]::-webkit-slider-thumb {
   border: 3px solid #0000FF;
   border-radius: 15px; /* Create circle for thumb image */
   background-color: #0000FF; /* Back-up coloring if image too small */
-  background-image: var(--background-image);
-  background-size: 24px; /* Size of image inside thumb */
+  background-size: contain; /* Size of image inside thumb */
   cursor: pointer;
+}
+
+/*Styles set by the id of input*/
+input[id='sliderOne']::-webkit-slider-thumb {
+  background-image: var(--background-image-sliderOne);
+}
+
+input[id='sliderTwo']::-webkit-slider-thumb {
+  background-image: var(--background-image-sliderTwo);
 }
 
 .slidecontainer {
